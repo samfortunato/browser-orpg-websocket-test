@@ -9,8 +9,6 @@ const server = http.createServer((req, res) => {
   }
 
   try {
-    console.log(req.url);
-
     const filePath = req.url === '/' ? './index.html' : `.${req.url}`;
     const file = fs.readFileSync(filePath);
 
