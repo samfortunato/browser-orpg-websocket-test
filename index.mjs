@@ -1,4 +1,4 @@
-import { Game } from "./game.mjs";
+import { Game } from './game.mjs';
 
 Game.initializeGame();
 Game.runGame();

@@ -12,14 +12,14 @@ export class DrawService {
 
   static drawGame(player) {
     this._clearCanvas();
-    this._drawPlayer(player);
+    this.drawPlayer(player);
   }
 
   static _clearCanvas() {
     this._ctx.clearRect(0, 0, this._canvas.width, this._canvas.height);
   }
 
-  static _drawPlayer(player) {
+  static drawPlayer(player) {
     this._ctx.fillStyle = player.color;
     this._ctx.fillRect(player.xPos, player.yPos, player.width, player.height);
   }

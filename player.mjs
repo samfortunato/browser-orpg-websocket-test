@@ -1,7 +1,8 @@
 import { InputHandler } from './handlers/input-handler.mjs';
 
 export class Player {
-  constructor(xPos = 0, yPos = 0) {
+  constructor(id = Date.now(), xPos = 0, yPos = 0) {
+    this.id = id;
     this.xPos = xPos;
     this.yPos = yPos;
     this.width = 32;
